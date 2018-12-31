@@ -1,45 +1,32 @@
+/*
+ * Western Canadian Learning Network.
+ * Two-Sort HTML game.
+ * @author Colin Bernard.
+ * December 2018.
+ */
 
-var items = [
-  {
-    name: "Airplanes",
-    column: "left"
-  },
-  {
-    name: "Cars",
-    column: "left"
-  },
-  {
-    name: "Food",
-    column: "right"
-  },
-  {
-    name: "Shelter",
-    column: "right"
-  },
-  {
-    name: "Water",
-    column: "right"
-  },
-  {
-    name: "Juice",
-    column: "left"
-  },
-  {
-    name: "Video Games",
-    column: "left"
-  },
-  {
-    name: "Computers",
-    column: "left"
-  },
-  {
-    name: "Kitchen",
-    column: "left"
-  }
-]
-
+var items;
 
 function init() {
+
+  $.getJSON("versions/" + title + ".json", function(json) {
+    items = json.items;
+
+    // Set title.
+    $("#header-bar h1").html(json.title);
+
+    // Set instructions.
+    $("#header-bar p").html($("#header-bar p").html().replace("left", json.left).replace("right", json.right));
+
+    // Add items to the center <div>.
+    addItems();
+
+    // Show the container now that everything is loaded.
+    $(".container").css("visibility", "visible");
+  });
+}
+
+function addItems() {
   // Shuffle items.
   shuffle(items);
 
@@ -123,14 +110,10 @@ function reset() {
   $(".draggable").remove();
 
   // Re-add the items.
-  init();
+  addItems();
 }
 
 
-/**
- * Shuffles array in place.
- * @param {Array} a items An array containing the items.
- */
 function shuffle(a) {
     var j, x, i;
     for (i = a.length - 1; i > 0; i--) {

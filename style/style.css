@@ -132,4 +132,5 @@ div#result {
 /* The main container. */
 div.container {
   border: 2px solid black;
+  visibility: hidden; /* hidden until loaded. */
 }

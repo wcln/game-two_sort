@@ -1,0 +1,43 @@
+{
+  "title": "Wants or Needs?",
+  "left": "Wants",
+  "right": "Needs",
+  "items": [
+    {
+      "name": "Airplanes",
+      "column": "left"
+    },
+    {
+      "name": "Cars",
+      "column": "left"
+    },
+    {
+      "name": "Food",
+      "column": "right"
+    },
+    {
+      "name": "Shelter",
+      "column": "right"
+    },
+    {
+      "name": "Water",
+      "column": "right"
+    },
+    {
+      "name": "Juice",
+      "column": "left"
+    },
+    {
+      "name": "Video Games",
+      "column": "left"
+    },
+    {
+      "name": "Computers",
+      "column": "left"
+    },
+    {
+      "name": "Kitchen",
+      "column": "left"
+    }
+  ]
+}

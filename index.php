@@ -8,6 +8,9 @@
 	<script src="https://bclearningnetwork.com/lib/bootstrap/bootstrap.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="style/style.css"/>
 	<link rel="shortcut icon" href="images/favicon.ico"/>
+	<script>
+		var title = "<?=$_GET['title']?>";
+	</script>
 	<script type="text/javascript" src="two_sort.js"></script>
 </head>
 <body onload="init();">
@@ -16,7 +19,7 @@
       <div class="col-xs-12" id="header-bar">
         <img src="images/logo.png">
         <h1>Wants or Needs?</h1>
-        <p>Classify the following items by either dragging and dropping them into the <i>Wants</i> column or the <i>Needs</i> column.</p>
+        <p>Classify the following items by either dragging and dropping them into the <i>left</i> column or the <i>right</i> column.</p>
       </div>
     </div>
     <div class="row">
