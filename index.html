@@ -12,7 +12,35 @@
 </head>
 <body onload="init();">
 	<div class="container">
-
+    <div class="row">
+      <div class="col-xs-12" id="header-bar">
+        <img src="images/logo.png">
+        <h1>Wants or Needs?</h1>
+        <p>Classify the following items by either dragging and dropping them into the <i>Wants</i> column or the <i>Needs</i> column.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div id="wants" class="col-xs-4 game-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>Wants</h2>
+      </div>
+      <div id="items" class="col-xs-4 game-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <div id="item1" class="draggable" draggable="true" ondragstart="drag(event)">
+          <p>Food</p>
+        </div>
+        <div id="item2" class="draggable" draggable="true" ondragstart="drag(event)">
+          <p>Playstation Games</p>
+        </div>
+      </div>
+      <div id="needs" class="col-xs-4 game-column" ondrop="drop(event)" ondragover="allowDrop(event)">
+        <h2>Needs</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12" id="footer-bar">
+        <button onclick="check()" id="check-button">Check</button>
+        <button onclick="reset()" id="reset-button">Reset</button>
+      </div>
+    </div>
 	</div>
 </body>
 </html>

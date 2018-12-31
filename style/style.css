@@ -1,0 +1,105 @@
+
+/* All. */
+* {
+  font-family: "Century Gothic", Arial;
+}
+
+/* Title. */
+div#header-bar h1 {
+  font-weight: bold;
+}
+
+/* "Wants" column. */
+div#wants {
+  border-right: 1px solid black;
+}
+
+/* "Needs" column. */
+div#needs {
+  border-left: 1px solid black;
+}
+
+/* Draggable divs. */
+div.draggable {
+  margin: 10px;
+  border: 1px solid black;
+  box-shadow: 2px 5px #a0a0a0;
+  cursor: pointer; /* IE */
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+div.draggable:hover {
+  box-shadow: 2px 5px #444444;
+}
+
+/* The text within the draggable div. */
+div.draggable > p {
+    padding: 10px;
+    margin: 0;
+}
+
+
+/* Wants, Needs and the third column where items appear. */
+div.game-column {
+  height: 400px;
+  overflow-y: auto;
+  text-align: center;
+}
+
+/* Header bar. */
+div#header-bar {
+  text-align: center;
+}
+
+/* Logo image. */
+div#header-bar img {
+  height: 25px;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+}
+
+/* Footer bar. */
+div#footer-bar {
+  text-align: right;
+}
+
+/* Footer bar buttons */
+div#footer-bar button {
+  margin: .4em .2em;
+  border: none;
+  color: white;
+  padding: 12px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+}
+
+/* Check button in footer bar. */
+button#check-button {
+  background-color: #1f9134;
+}
+
+/* Check button hover. */
+button#check-button:hover {
+  background-color: #126020;
+}
+
+/* Reset button in footer bar. */
+button#reset-button {
+  background-color: #616161;
+}
+
+/* Reset button hover. */
+button#reset-button:hover {
+  background-color: #a0a0a0;
+}
+
+/* The main container. */
+div.container {
+  border: 2px solid black;
+}
