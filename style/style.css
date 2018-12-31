@@ -9,13 +9,13 @@ div#header-bar h1 {
   font-weight: bold;
 }
 
-/* "Wants" column. */
-div#wants {
+/* Left column. */
+div#left {
   border-right: 1px solid black;
 }
 
-/* "Needs" column. */
-div#needs {
+/* Right column. */
+div#right {
   border-left: 1px solid black;
 }
 
@@ -29,6 +29,16 @@ div.draggable {
   cursor: grab;
 }
 
+div.draggable.correct {
+  background-color: #39d861;
+  color: white;
+}
+
+div.draggable.incorrect {
+  background-color: #d83a3a;
+  color: white;
+}
+
 div.draggable:hover {
   box-shadow: 2px 5px #444444;
 }
@@ -40,7 +50,7 @@ div.draggable > p {
 }
 
 
-/* Wants, Needs and the third column where items appear. */
+/* Left, right and the center column where items appear. */
 div.game-column {
   height: 400px;
   overflow-y: auto;
@@ -66,7 +76,7 @@ div#footer-bar {
 }
 
 /* Footer bar buttons */
-div#footer-bar button {
+.container button {
   margin: .4em .2em;
   border: none;
   color: white;
@@ -77,6 +87,11 @@ div#footer-bar button {
   font-size: 16px;
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
+}
+
+.container button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
 }
 
 /* Check button in footer bar. */
@@ -97,6 +112,21 @@ button#reset-button {
 /* Reset button hover. */
 button#reset-button:hover {
   background-color: #a0a0a0;
+}
+
+/* Restart button. */
+button#restart-button {
+  background-color: #168ac9;
+}
+
+/* Restart button hover. */
+button#restart-button:hover {
+  background-color: #0d4b6d;
+}
+
+/* The result div which is shown after checking answers. */
+div#result {
+  display: none;
 }
 
 /* The main container. */
