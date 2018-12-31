@@ -18,7 +18,7 @@
     <div class="row">
       <div class="col-xs-12" id="header-bar">
         <img src="images/logo.png">
-        <h1>Wants or Needs?</h1>
+        <h1>Two Sort</h1>
         <p>Classify the following items by either dragging and dropping them into the <i>left</i> column or the <i>right</i> column.</p>
       </div>
     </div>
