@@ -18,6 +18,10 @@ function init() {
     // Set instructions.
     $("#header-bar p").html($("#header-bar p").html().replace("left", json.left).replace("right", json.right));
 
+    // Set column titles.
+    $("#left > h2").html(json.left);
+    $("#right > h2").html(json.right);
+
     // Add items to the center <div>.
     addItems();
 

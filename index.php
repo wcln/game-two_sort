@@ -24,7 +24,7 @@
     </div>
     <div class="row">
       <div id="left" class="col-xs-4 game-column" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <h2>Wants</h2>
+        <h2>Left</h2>
       </div>
       <div id="items" class="col-xs-4 game-column" ondrop="drop(event)" ondragover="allowDrop(event)">
         <div id="result">
@@ -34,7 +34,7 @@
         </div>
       </div>
       <div id="right" class="col-xs-4 game-column" ondrop="drop(event)" ondragover="allowDrop(event)">
-        <h2>Needs</h2>
+        <h2>Right</h2>
       </div>
     </div>
     <div class="row">
