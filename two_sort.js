@@ -64,7 +64,26 @@ function drag(event) {
 function drop(event) {
   event.preventDefault();
   var data = event.dataTransfer.getData("text");
-  event.target.appendChild(document.getElementById(data));
+
+  // Make sure we aren't dropping into another draggable.
+  // If we are, drop into the parent div.
+  var newEvent = null;
+  if (event.target.parentElement.parentElement.className.includes("game-column")) {
+    console.log('correcting')
+    newEvent = event.target.parentElement.parentElement;
+  }
+
+  if (event.target.parentElement.className.includes("game-column")) {
+    console.log('correcting')
+    newEvent = event.target.parentElement;
+  }
+
+  if (newEvent !== null) {
+    newEvent.appendChild(document.getElementById(data));
+  } else {
+    event.target.appendChild(document.getElementById(data));
+  }
+
 
   // Check if all items are sorted.
   // If so, enable the check button.
