@@ -1,7 +1,7 @@
 /*
  * Western Canadian Learning Network.
  * Two-Sort HTML game.
- * @author Colin Bernard.
+ * @author Colin Perepelken.
  * December 2018.
  */
 
